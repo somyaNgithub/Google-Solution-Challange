@@ -1,0 +1,11 @@
+
+#data-collection {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#data-collection h2 {
+  margin-bottom: 20px;
+}

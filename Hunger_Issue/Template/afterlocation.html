@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  {% load static %}
+  <head>
+    <title>Hunger India</title>
+    <style>
+      
+      /* Top blue border with buttons */
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+      }
+      .top-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(32, 32, 115);
+        padding: 20px;
+        box-sizing: border-box;
+        height: 80px;
+        border-top: 10px solid rgb(32, 32, 115);
+      }
+
+      .top-bar button  {
+        margin-right: 20px;
+        padding: 20px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        background-color: rgb(32, 32, 115);
+        cursor: pointer;
+        font-size: 18px;
+        text-decoration-line: none;
+        display: inline-block;
+      }
+
+      .top-bar button a{
+        margin-right: 0;
+        padding: 0;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        background-color: rgb(32, 32, 115);
+        cursor: pointer;
+        font-size: 18px;
+        text-decoration-line: none;
+        display: block;
+      }
+
+      .top-bar button:hover{
+        text-decoration: underline;
+      }
+
+
+      /* Donate button with heart symbol */
+      .top-bar.donate-button {
+        margin-right:0;
+        background-color: grey;
+        border-radius: 50%;
+        width: 100px;
+        height: 60px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 30px;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+      }
+
+
+      .top-bar.donate-button a {
+        margin-right:0;
+        display: block;
+        width: 100px;
+        height: 60px;
+        color: #ffffff !important;
+        text-decoration-line: none;
+      }
+      
+      .donate-button:hover{
+        background-color: darkgrey !important;
+      }
+    
+      .donate-button  :before {
+        content: "\2665";
+      }
+      /* Main heading */
+      .main-heading {
+        text-align: center;
+        font-size: 36px;
+        color: rgb(32, 32, 115);
+        margin-top: 80px;
+      }
+      /* Vertical buttons with ellipsed shape background */
+      .vertical-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        position: relative;
+      
+      }
+      .vertical-buttons button {
+        margin-bottom: 40px;
+        padding: 20px;
+        border: none;
+        border-radius: 50px;
+        color: black ;
+        background-color: rgb(138, 243, 255);
+        cursor: pointer;
+        width: 300px;
+        font-size: 24px;
+      }
+
+      .vertical-buttons button a{
+        margin-bottom: 40px;
+        padding: 20px;
+        border: none;
+        border-radius: 50px;
+        color: black ;
+        background-color: rgb(138, 243, 255);
+        cursor: pointer;
+        width: 300px;
+        font-size: 24px;
+        text-decoration: none;
+      }
+
+      .vertical-buttons button a:hover {
+        background-color: rgb(18, 13, 49);
+        color:white;
+        width: 300px;
+      
+      }
+      /* Ellipsed shape background for vertical buttons */
+      
+    
+    </style>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div>
+        <h1 style="color: rgb(255, 255, 0); margin: 0;">Hunger India</h1>
+      </div>
+      <div>
+        <button ><a  href="http://localhost:8000/index">Ngo login</a></button>
+        <button ><a  href="http://localhost:8000/index">SignIn</a></button>
+        <button ><a  href="http://localhost:8000/index">About us</a></button>
+        <button class ="donate-button"><a  href="http://localhost:8000/fooddonate">Donate</a></button>
+        <button ><a  href="http://localhost:8000/index">Home</a></button>
+      </div>
+    </div>
+    <h2 class="main-heading">HUNGER INDIA WELCOMES YOU !</h2>
+    <div class="vertical-buttons">
+      <button ><a href="http://localhost:8000/fooddonate">DONATE FOOD</a></button>
+      <button><a href="http://localhost:8000/userform">RATION TOKENS</a></button>
+      <button><a href="http://localhost:8000/userform">RATION PATTERNS</a></button>
+      
+    </div>
+    </div>
+   
+  </body>
+</html

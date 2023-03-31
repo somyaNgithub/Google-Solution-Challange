@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+  {% load static %}
+  <head>
+    <title>Hunger India</title>
+    <style>
+      
+
+     body{
+         height: 100%;
+      }
+
+      /* Top blue border with buttons */
+      body {
+        margin: 0;
+        padding-bottom: 50px;
+        /* background-image: url('background.jpg'); */
+        background-color: aliceblue;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .content-container {
+        width: 100%;
+        height: calc(100vh - 80px);
+        
+        /* overflow: hidden; */
+        /*padding: 20px;*/
+        }
+      
+        .content-container .top-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(32, 32, 115);
+        padding: 20px;
+        box-sizing: border-box;
+        height: 80px;
+        border-top: 10px solid rgb(32, 32, 115);
+      }
+      .content-container .top-bar button {
+        margin-right: 20px;
+        padding: 20px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        background-color: rgb(32, 32, 115);
+        cursor: pointer;
+        font-size: 18px;
+      }
+      /* Donate button with heart symbol */
+      .content-container .donate-button {
+        margin-right:auto;
+        background-color: grey;
+        border-radius: 50%;
+        width: 100px;
+        height: 60px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 30px;
+      }
+      .content-container .donate-button:hover {
+        background-color: darkgrey;
+      }
+      .content-container .donate-button:before {
+        content: "\2665";
+      }
+      /* Main heading */
+      .content-container .main-heading {
+        text-align: center;
+        font-size: 36px;
+        color: rgb(32, 32, 115);
+        margin-top: 50px;
+        margin-left: 350px;
+      }
+      /* Vertical buttons with ellipsed shape background */
+      .content-container .vertical-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        position: relative;
+      }
+      .content-container .vertical-buttons button {
+        margin-bottom: 40px;
+        padding: 20px;
+        border: none;
+        border-radius: 50px;
+        color: black ;
+        background-color: rgb(138, 243, 255);
+        cursor: pointer;
+        width: 300px;
+        font-size: 24px;
+      }
+      .content-container .vertical-buttons button:hover {
+        background-color: rgb(18, 13, 49);
+        color:white;
+      }
+      /* Ellipsed shape background for vertical buttons */
+      
+      #one{
+        margin-left: 250px;
+        
+      }
+      #two
+      {
+        margin-left: 300px;
+        height: 150px;
+        width: 150px;
+        margin-bottom: 120px;
+        
+      }
+      .content-container .vl {
+      border-left: 3px solid blue;
+      height: 340px;
+      position: absolute;
+      left: 50%;
+      margin-left: -3px;
+      top: 0;
+      margin-top: 300px;
+}
+/* LOGIN CSS */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* BASIC */
+
+
+
+
+a {
+  color: #92badd;
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display:inline-block;
+  margin: 40px 8px 10px 8px; 
+  color: #cccccc;
+}
+
+
+/* STRUCTURE */
+
+.content-container .wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+
+#formContent {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+  margin-left: 150px;
+}
+
+#formFooter {
+  background-color: #f6f6f6;
+  border-top: 1px solid #dce8f1;
+  padding: 25px;
+  text-align: center;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+
+
+/* TABS */
+
+h2.inactive {
+  color: #0d0d0d;
+
+}
+
+h2.active {
+  color: #0d0d0d;
+  border-bottom: 2px solid #5fbae9;
+}
+
+
+
+/* FORM TYPOGRAPHY*/
+
+input[type=button], input[type=submit], input[type=reset]  {
+  background-color: #56baed;
+  border: none;
+  color: white;
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+  background-color: #39ace7;
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+input[type=text] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input[type=text]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #5fbae9;
+}
+
+input[type=text]:placeholder {
+  color: #cccccc;
+}
+
+
+
+/* ANIMATIONS */
+
+/* Simple CSS3 Fade-in-down Animation */
+.content-container .fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.content-container .fadeIn {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.content-container .fadeIn.first {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.content-container .fadeIn.second {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.content-container .fadeIn.third {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.content-container .fadeIn.fourth {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/* Simple CSS3 Fade-in Animation */
+.content-container .underlineHover:after {
+  display: block;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: #56baed;
+  content: "";
+  transition: width 0.2s;
+}
+
+.content-container .underlineHover:hover {
+  color: #0d0d0d;
+}
+
+.content-container .underlineHover:hover:after{
+  width: 100%;
+}
+
+
+
+/* OTHERS */
+
+*:focus {
+    outline: none;
+} 
+
+#icon {
+  width:60%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+    
+    </style>
+  </head>
+  
+  <body>
+  <section class="content-container">
+    <div class="top-bar">
+      <div>
+        <h1 style="color: rgb(255, 255, 0); margin: 0;">Hunger India</h1>
+      </div>
+      <div class="">
+        <button>NGO login</button>
+        <button>Sign in</button>
+        <button>About us</button>
+        <button class="donate-button" onclick="window.location.href='http://localhost:8000/userform'">Donate</button>
+      </div>
+    </div>
+    <h2 class="main-heading">HUNGER INDIA WELCOMES YOU !</h2>
+    <table>
+      <tr>
+        <td>
+          <div class="vertical-buttons">
+          <button id = "one" onclick="window.location.href='http://localhost:8000/fooddonate'">DONATE FOOD</button>
+          </div>
+        </td>
+        <div class="vl"></div>
+        <td>
+          <div class="wrapper fadeInDown">
+            <div id="formContent">
+              <!-- Tabs Titles -->
+              <h2 class="active"> Sign In </h2>
+              <h2 class="inactive underlineHover"><a href ="http://localhost:8000/userform" >Sign Up</a></h2>
+          
+              <!-- Icon -->
+              <div class="fadeIn first">
+                <img src="{%static 'ngo_new.png' %}" id="icon" alt="User Icon" />
+              </div>
+          
+              <!-- Login Form -->
+              <form>
+                <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+                <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+                <input type="submit" class="fadeIn fourth" value="Log In">
+              </form>
+          
+              <!-- Remind Passowrd -->
+              <div id="formFooter">
+                <a class="underlineHover" href="#">Forgot Password?</a>
+              </div>
+          
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+   </div>
+  </section>
+</body>
+</html

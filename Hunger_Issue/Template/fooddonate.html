@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{%load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'fooddonate.css'%}">
+</head>
+<body style="font-family:  'Poppins', sans-serif;">
+    <div class="container">
+        <div class="regform" >
+    <form action="fooddonate" method="post">
+        <p class="logo">Food <b style="color: rgb(32, 32, 115);">Donate</b></p>
+
+       <div class="input">
+        <label for="foodname"> Food Name:</label>
+        <input type="text" id="foodname" name="foodname">
+        </div>
+      
+      
+        <div class="radio">
+        <label for="meal" >Meal type :</label> 
+        <br><br>
+
+        <input type="radio" name="meal" id="veg" value="veg">
+        <label for="veg" style="padding-right: 40px;">Veg</label>
+        <input type="radio" name="meal" id="Non-veg" value="Non-veg" >
+        <label for="Non-veg">Non-veg</label>
+    
+        </div>
+        <br>
+        <div class="input">
+        <label for="food">Select the Category:</label>
+        <br><br>
+        <div class="image-radio-group">
+            <input type="radio" id="raw-food" name="image-choice" value="raw-food" checked>
+            <label for="raw-food">
+              <img src="{%static 'img/raw-food.png'%}" alt="raw-food" >
+            </label>
+            <input type="radio" id="cooked-food" name="image-choice" value="cooked-food">
+            <label for="cooked-food">
+              <img src="{%static 'img/cooked-food.png'%}" alt="cooked-food" >
+            </label>
+            <input type="radio" id="packed-food" name="image-choice" value="packed-food">
+            <label for="packed-food">
+              <img src="{%static 'img/packed-food.png'%}" alt="packed-food" >
+            </label>
+          </div>
+          
+        </div>
+        <div class="input">
+        <label for="quantity">Quantity (person):</label>
+        <input type="text" id="quantity" name="quantity">
+        </div>
+        <div class="input">
+          <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+          </div>
+      <div>
+      <label for="phoneno">PhoneNo:</label>
+      <input type="text" id="phoneno" name="phoneno">
+      </div>
+     
+</select> 
+
+        <label for="address" style="padding-left: 10px;">Address:</label>
+        <input type="text" id="address" name="address"><br>
+        
+      
+       
+       
+        </div>
+        <div class="btn">
+            <button type="submit" name="submit">submit</button>
+        </div>
+     </form>
+     </div>
+   </div>
+     
+    
+</body>
+</html>
